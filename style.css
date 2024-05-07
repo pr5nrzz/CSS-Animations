@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 75px;
+}
+
+.box {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 15px 15px rgba(32, 178, 170, 0.15);
+    margin-bottom: 100px;
+
+    transition-duration: 500ms;
+    transition-property: background-color, transform, box-shadow;
+    transition-timing-function: ease;
+    transition-delay: 1000ms;
+}
+
+.box:hover,
+.box:focus {
+    background-color: tomato;
+    transform: rotate(45deg);
+    box-shadow: 0 15px 15px rgba(255, 99, 71, 0.15);
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    width: 100px;
+    height: 100px;
+    transition-duration: 1000ms;
+    transition-property: width;
+}
+
+.box1 {
+    background-color: rgb(32, 178, 170, 0.8);
+    transition-timing-function: linear;
+}
+
+.box2 {
+    background-color: rgb(32, 178, 170, 0.7);
+    transition-timing-function: ease-in;
+}
+
+.box3 {
+    background-color: rgb(32, 178, 170, 0.6);
+    transition-timing-function: ease-out;
+}
+
+.box4 {
+    background-color: rgb(32, 178, 170, 0.5);
+    transition-timing-function: ease-in-out;
+}
+
+.box1:hover {
+    width: 500px;
+}
+
+.box2:hover {
+    width: 500px;
+}
+
+.box3:hover {
+    width: 500px;
+}
+
+.box4:hover {
+    width: 500px;
+}
+ 
+button {
+    background-color: lightsalmon;
+    padding: 0.5em 2em;
+    border: 0;
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    transition: height 1000ms ease 250ms, width 1000ms ease 250ms;
+    /* transition-duration: 1s;
+    transition-property: height, width;
+    transition-timing-function: ease;
+    transition-delay: 1000ms; */
+}
+
+button:hover {
+    height: 100px;
+    width: 200px;
+}
